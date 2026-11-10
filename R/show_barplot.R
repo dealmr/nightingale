@@ -23,9 +23,9 @@
 #'
 #' @export
 show_barplot <- function(
-    mortality_data = mortality,
-    metrics = c("disease", "other", "wounds"),
-    highlight_intervention = TRUE) {
+  mortality_data = mortality,
+  metrics = c("disease", "other", "wounds"),
+  highlight_intervention = TRUE) {
   # Inspired by:
   # https://www.datawrapper.de/blog/recreating-nightingale-rose-chart
 
@@ -58,5 +58,5 @@ show_barplot <- function(
       # Nightingale's improvements were implemented in Feb / March 1855
       ggplot2::geom_vline(xintercept = as.POSIXct("1855-02-15"), linetype = "dashed")
   }
-  return(plot)
+  plot
 }

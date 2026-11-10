@@ -8,5 +8,4 @@
 
 library(testthat)
 library(nightingale)
-
 test_check("nightingale")
